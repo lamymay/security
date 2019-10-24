@@ -1,0 +1,33 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /rbac
+
+spring:
+  application:
+    name: zero-server
+  profiles:
+    active: local
+  resources:
+    add-mappings: false
+    static-locations: classpath:/static/,classpath:/templates/index/
+  mvc:
+    throw-exception-if-no-handler-found: true
+    static-path-pattern: /static/**
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    #https://blog.csdn.net/zoeou/article/details/78629032
+
+#配置日志,日志用xml去配置
+log:
+  dir: ./log
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*/*.xml
+
+# 自定义参数；说明 1、web.system.initial:是否在系统启动的时候初始化一些操作
+
