@@ -37,7 +37,6 @@ public class LoginController {
     public String testLogin() {
         log.debug("--------------------->/login");
         log.debug("--------------------->/login");
-        log.debug("--------------------->/login");
         return login;
     }
 
@@ -48,6 +47,7 @@ public class LoginController {
 
     @GetMapping(value = "/user")
     public String user() {
+        log.debug("--------------------->/user");
         return user;
     }
 

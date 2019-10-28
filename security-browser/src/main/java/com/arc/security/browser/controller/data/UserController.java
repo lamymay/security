@@ -18,7 +18,7 @@ import java.util.Map;
  */
 @Slf4j
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
 
     //增删改查
@@ -40,7 +40,7 @@ public class UserController {
      *
      * @return
      */
-    @GetMapping(value = "")
+    @PostMapping(value = "/list")
     public Object list() {
         log.debug("获取用户列表。");
         return "list 获取用户列表 [,,,,,,,,]";
