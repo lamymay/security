@@ -3,6 +3,7 @@ package com.arc.security.browser.controller.data;
 //import com.arc.core.model.request.system.UserRequest;
 //import com.arc.utils.Assert;
 
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.Assert;
@@ -18,17 +19,25 @@ import java.util.Map;
  */
 @Slf4j
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/v2")
 public class UserController {
 
-    //增删改查
+    @Data
+    class User {
+        private String username;
+        private String password;
+    }
 
-    /**
-     * 获取单个用户
-     *
-     * @param id
-     * @return
-     */
+    @PostMapping(value = "/login/form/process")
+    public ResponseEntity loginV1(User user) {
+        log.debug("LOGIN");
+        log.info("LOGIN");
+        log.warn("LOGIN");
+        System.out.println(user);
+        return ResponseEntity.ok(true);
+    }
+
+
     @GetMapping(value = "/{id}")
     public Object get(@PathVariable Long id) {
         log.debug("获取单个用户,参数 id={}", id);
