@@ -1,8 +1,8 @@
 package com.arc.security.rbac.service.system.impl;
 
-import com.arc.model.domain.system.RoleResource;
-import com.arc.model.domain.system.SysRole;
-import com.arc.model.request.system.SysRoleRequest;
+import com.arc.core.model.domain.system.RoleResource;
+import com.arc.core.model.domain.system.SysRole;
+import com.arc.core.model.request.system.SysRoleRequest;
 import com.arc.utils.Assert;
 import com.arc.utils.bean.BeanUtil;
 import com.arc.security.rbac.mapper.system.SysRoleMapper;
@@ -59,7 +59,7 @@ public class SysRoleServiceImpl implements SysRoleService {
 
     @Override
     public Integer batchSave(List<SysRole> roles) {
-        return roleMapper.batchSave(roles);
+        return roleMapper.saveBatch(roles);
     }
 
     @Override

@@ -1,0 +1,43 @@
+########################################################
+#          不同环境         Environment for dev
+########################################################
+server:
+  port: 80
+
+spring:
+  profiles: dev
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+
+arc:
+  security:
+    browser:
+      #login的地址是斜线大头的，否则报错K
+      loginUrl: /authentication/require
+      loginProcessingUrl: /v2/login/form/process
+      cookieKey: DEV_ARC_KEY_
+
+    code:
+      length: 3
+      image:
+        width: 100
+        height: 80
+        expiredSecond: 60
+        url: /a,/b,/c
+      sms:
+        test: aaa
+---
+server:
+  port: 80
+
+spring:
+  profiles: dev
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+

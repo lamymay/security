@@ -1,7 +1,7 @@
 package com.arc.security.rbac.service.system.impl;
 
-import com.arc.model.domain.system.SysUser;
-import com.arc.model.domain.system.SysUserAuth;
+import com.arc.core.model.domain.system.SysUser;
+import com.arc.core.model.domain.system.SysUserAuth;
 import com.arc.security.rbac.service.system.SysUserService;
 import com.arc.security.rbac.mapper.system.SysUserAuthMapper;
 import com.arc.security.rbac.mapper.system.SysUserMapper;

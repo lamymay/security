@@ -1,6 +1,6 @@
 package com.arc.security.rbac.service.system;
 
-import com.arc.model.domain.system.SysUserAuth;
+import com.arc.core.model.domain.system.SysUserAuth;
 
 
 /**

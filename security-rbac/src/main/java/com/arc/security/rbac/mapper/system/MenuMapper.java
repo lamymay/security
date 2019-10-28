@@ -1,6 +1,6 @@
 package com.arc.security.rbac.mapper.system;
 
-import com.arc.model.domain.system.SysMenu;
+import com.arc.core.model.domain.system.SysMenu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -23,24 +23,24 @@ public interface MenuMapper extends BaseMapper<SysMenu> {
      * ·
      * 主键查询
      *
-     * @param id
-     * @return
+     * @param id Long
+     * @return SysMenu
      */
     SysMenu get(Long id);
 
     /**
      * 逻辑删除，即：更新
      *
-     * @param id
-     * @return
+     * @param id Long
+     * @return int
      */
     int deleteLogical(Long id);
 
     /**
      * 批量保存，待测试
      *
-     * @param menus
-     * @return
+     * @param menus List
+     * @return int
      */
     int saveBatch(@Param("menus") List<SysMenu> menus);
 

@@ -1,7 +1,7 @@
 package com.arc.security.rbac.controller.rbac;
 
-import com.arc.model.domain.system.SysResource;
-import com.arc.model.vo.ResponseVo;
+import com.arc.core.model.domain.system.SysResource;
+import com.arc.core.model.vo.ResponseVo;
 import com.arc.security.rbac.service.system.SysResourceService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import java.util.Set;
  * 系统资源相关接口
  *
  * @author 叶超
- * @since: 2019/4/27 17:02
+ * @since 2019/4/27 17:02
  */
 @Slf4j
 @RestController

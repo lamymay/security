@@ -1,6 +1,6 @@
 package com.arc.security.rbac.mapper.system;
 
-import com.arc.model.domain.system.SysUser;
+import com.arc.core.model.domain.system.SysUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -25,8 +25,8 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
     /**
      * 根据用户id获取用户的
      *
-     * @param id
-     * @return
+     * @param id 根据用户id获取用户的
+     * @return SysUser
      */
     SysUser getUserWithAuth(Long id);
 
@@ -34,9 +34,9 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
     /**
      * 根据类型与账号获取用户
      *
-     * @param identityType
-     * @param identifier
-     * @return
+     * @param identityType Integer
+     * @param identifier   String
+     * @return SysUser
      */
     SysUser getUserByIdentityTypeAndIdentifier(@Param("identityType") Integer identityType, @Param("identifier") String identifier);
 

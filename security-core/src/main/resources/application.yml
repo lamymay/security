@@ -1,0 +1,95 @@
+spring:
+  application:
+    name: security9-core
+  profiles:
+    active: dev
+#  thymeleaf:
+#    cache: false
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    mode: HTML5
+#    encoding: UTF-8
+
+---
+########################################################
+#          不同环境         Environment for Localhost  注意：数据配置在这里
+########################################################
+server:
+  port: 80
+
+spring:
+  profiles: dev
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+  datasource:
+    #爆红不要紧张，没有问题的只是编辑工具不能识别造成的，本身是正确的,驱动可以不必写，url中可以体现，代码会自动判断的
+    #    driver-class-name: com.mysql.cj.jdbc.Driver   #8.X mysql
+    #    driver-class-name:  com.mysql.jdbc.Driver   #5.X mysql
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&useAffectedRows=true&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: admin
+    hikari:
+      max-lifetime: 1765000
+      maximum-pool-size: 15
+arc:
+  security:
+    browser:
+      #login的地址是斜线大头的，否则报错K
+#      loginUrl: /authentication/require
+      loginUrl: /arc_login.html
+      loginProcessingUrl: /v2/authentication/form/process
+      cookieKey: DEV_ARC_KEY_
+      rememberMeSeconds: 300
+    code:
+      length: 4
+      image:
+        width: 100
+        height: 80
+        expiredSecond: 60
+        url: /a,/b,/c
+      sms:
+        test: aaa
+---
+server:
+  port: 80
+
+spring:
+  profiles: local
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+#    jedis:
+#      pool:
+#        # 最大空闲连接
+#        max-idle: 8
+#        # 最小空闲链接
+#        min-idle: 0
+#        # 最大连接数（负数表示没有限制）
+#        max-active: 8
+#        # 最大阻塞等待时间（负数表示没有限制）
+#        max-wait: 0
+#    # 链接超时时间（毫秒）
+#    timeout: 50
+
+arc:
+  security:
+    browser:
+      #login的地址是斜线打头的，否则报错
+      loginUrl: /authentication/require
+      loginProcessingUrl: /v2/login/form/process
+      cookieKey: ARC
+
+    code:
+      length: 4
+      image:
+        width: 100
+        height: 80
+        expiredSecond: 60
+        url: /abc
+      sms:
+        test: aaa

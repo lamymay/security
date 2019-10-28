@@ -1,6 +1,6 @@
 package com.arc.security.rbac.service.system.impl;
 
-import com.arc.model.domain.system.SysUserAuth;
+import com.arc.core.model.domain.system.SysUserAuth;
 import com.arc.security.rbac.service.system.SysUserAuthService;
 import com.arc.security.rbac.mapper.system.SysUserAuthMapper;
 import lombok.extern.slf4j.Slf4j;

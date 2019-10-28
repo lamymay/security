@@ -1,7 +1,7 @@
 package com.arc.security.rbac.service.system;
 
 
-import com.arc.model.domain.system.SysUser;
+import com.arc.core.model.domain.system.SysUser;
 
 import java.util.List;
 

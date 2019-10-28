@@ -1,0 +1,14 @@
+########################################################
+#          不同环境         Environment for local
+########################################################
+server:
+  port: 8002
+
+spring:
+  profiles: local
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+

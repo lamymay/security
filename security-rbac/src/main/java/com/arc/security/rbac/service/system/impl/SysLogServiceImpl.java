@@ -1,6 +1,6 @@
 package com.arc.security.rbac.service.system.impl;
 
-import com.arc.model.domain.system.SysLog;
+import com.arc.core.model.domain.system.SysLog;
 import com.arc.security.rbac.mapper.system.SysLogMapper;
 import com.arc.security.rbac.service.system.SysLogService;
 import lombok.extern.slf4j.Slf4j;

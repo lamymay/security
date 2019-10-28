@@ -1,13 +1,12 @@
 #/target/
 target/
-security-app/
-security-browser/
-security-core/
+#security-app/
+#security-browser/
+#security-core/
 *.bak
 log/
 *.log
-server/src/main/resources/config/application.yml
-/com/arc/context/config/datasource/test
+*self.yml
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###

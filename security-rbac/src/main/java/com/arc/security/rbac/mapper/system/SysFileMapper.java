@@ -1,7 +1,7 @@
 package com.arc.security.rbac.mapper.system;
 
 
-import com.arc.model.domain.system.SysFile;
+import com.arc.core.model.domain.system.SysFile;
 
 import java.util.List;
 

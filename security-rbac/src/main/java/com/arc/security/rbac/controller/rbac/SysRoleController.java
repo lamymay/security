@@ -1,8 +1,8 @@
 package com.arc.security.rbac.controller.rbac;
 
-import com.arc.model.domain.system.SysRole;
-import com.arc.model.request.system.SysRoleRequest;
-import com.arc.model.vo.ResponseVo;
+import com.arc.core.model.domain.system.SysRole;
+import com.arc.core.model.request.system.SysRoleRequest;
+import com.arc.core.model.vo.ResponseVo;
 import com.arc.security.rbac.service.system.SysRoleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +16,7 @@ import java.util.List;
  * 单表：查询、新增、批量新增、删除、批量删除、更新、批量更新、分页查询
  *
  * @author 叶超
- * @since: 2019/4/27
+ * @since 2019/4/27
  */
 @Slf4j
 @RestController
@@ -124,6 +124,7 @@ public class SysRoleController {
     }
 
     //操作子资源的接口
+
     /**
      * 新增角色的同时添加资源
      *

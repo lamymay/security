@@ -1,7 +1,7 @@
 package com.arc.security.rbac.service.system;
 
-import com.arc.model.domain.system.SysRole;
-import com.arc.model.request.system.SysRoleRequest;
+import com.arc.core.model.domain.system.SysRole;
+import com.arc.core.model.request.system.SysRoleRequest;
 
 import java.util.List;
 
@@ -63,7 +63,7 @@ public interface SysRoleService {
     /**
      * 分页条件查询数据列表
      *
-     * @param roleRequest
+     * @param roleRequest SysRoleRequest
      * @return 数据集合
      */
     List<SysRole> listPage(SysRoleRequest roleRequest);

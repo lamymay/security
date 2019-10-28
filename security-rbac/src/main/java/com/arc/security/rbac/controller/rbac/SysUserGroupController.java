@@ -1,8 +1,8 @@
 package com.arc.security.rbac.controller.rbac;
 
-import com.arc.model.domain.system.SysUser;
-import com.arc.model.request.system.UserRequest;
-import com.arc.model.vo.ResponseVo;
+import com.arc.core.model.domain.system.SysUser;
+import com.arc.core.model.request.system.UserRequest;
+import com.arc.core.model.vo.ResponseVo;
 import com.arc.security.rbac.service.system.SysUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

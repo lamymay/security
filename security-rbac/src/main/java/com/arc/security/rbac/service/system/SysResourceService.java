@@ -1,7 +1,6 @@
 package com.arc.security.rbac.service.system;
 
-
-import com.arc.model.domain.system.SysResource;
+import com.arc.core.model.domain.system.SysResource;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

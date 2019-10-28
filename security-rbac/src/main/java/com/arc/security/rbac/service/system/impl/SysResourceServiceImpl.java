@@ -1,9 +1,9 @@
 package com.arc.security.rbac.service.system.impl;
 
-import com.arc.annotation.Note;
-import com.arc.model.domain.system.SysResource;
-import com.arc.security.rbac.service.system.SysResourceService;
+import com.arc.core.config.annotations.Note;
+import com.arc.core.model.domain.system.SysResource;
 import com.arc.security.rbac.mapper.system.SysResourceMapper;
+import com.arc.security.rbac.service.system.SysResourceService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.data.domain.Page;

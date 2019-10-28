@@ -1,6 +1,6 @@
 package com.arc.security.rbac.service.system;
 
-import com.arc.model.domain.system.SysLog;
+import com.arc.core.model.domain.system.SysLog;
 
 import java.util.List;
 

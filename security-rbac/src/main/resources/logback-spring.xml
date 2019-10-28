@@ -98,7 +98,7 @@ debug:当此属性设置为true时，将打印出logback内部日志信息，实
     <springProfile name="test,dev">
         <logger name="com.arc" level="DEBUG" additivity="false">
             <appender-ref ref="consoleLog"/>
-            <appender-ref ref="fileLog"/>
+<!--            <appender-ref ref="fileLog"/>-->
         </logger>
     </springProfile>
 
