@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Please login by testLogin</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+              crossorigin="anonymous">
+        <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet"
+              crossorigin="anonymous"/>
+    </head>
+<body>
+
+
+<div class="container">
+    <div>
+        <h2>arc-login</h2>
+    </div>
+    <form class="form-signin" method="post" action="/v2/authentication/form/process">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <p>
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required
+                   autofocus>
+        </p>
+        <p>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+        </p>
+        <p>
+            <label for="username" class="sr-only">verifyCode</label>
+            <img src="/verify/code/image">
+            <input type="verifycode" id="verifyCode" name="verifyCode" class="form-control" placeholder="验证码" required
+                   autofocus>
+        </p>
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        <!--        <input name="_csrf" type="hidden" value="90ffee0f-a1a5-447b-80d9-0c9135a37522"/>-->
+        <input name="remember-me" type="checkbox" th:value="true">记住我</input>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+    <hr/>
+    <div>
+        <h2>短信登陆</h2>
+    </div>
+    <form class="form-signin" method="post" action="/authentication/cellphone">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <p>
+            <label for="username" class="sr-only">手机号</label>
+            <input type="text" id="cellphone" name="cellphone" th:value="17671801277" class="form-control"
+                   placeholder="cellphone" required
+                   autofocus>
+        </p>
+
+        <a href="/verify/code/sms?cellphone=17671801277">获取短信验证码</a>
+        <p>
+            <label for="username" class="sr-only">验证码</label>
+            <input type="text" id="smsCode" name="smsCode" class="form-control" placeholder="smsCode"
+                   required
+                   autofocus>
+        </p>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+
+    </form>
+</div>
+
+
+</body>
+</html>
