@@ -19,6 +19,10 @@ spring:
     mode: HTML5
     encoding: UTF-8
     #https://blog.csdn.net/zoeou/article/details/78629032
+  security:
+    user:
+      name: root
+      password: admin
 
 
 arc:
@@ -37,3 +41,4 @@ arc:
         url: /abc
       sms:
         test: aaa
+

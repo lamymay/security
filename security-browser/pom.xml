@@ -55,19 +55,22 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 -->
-        <!--security-core-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.arc</groupId>-->
-        <!--            <artifactId>security-core</artifactId>-->
-        <!--            <version>0.0.1-SNAPSHOT</version>-->
-        <!--            <scope>compile</scope>-->
-        <!--        </dependency>-->
 
         <!--spring-boot-starter-security-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+
+        <!--core-->
+<!--
+        <dependency>
+            <groupId>com.arc</groupId>
+            <artifactId>core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+-->
 
     </dependencies>
 

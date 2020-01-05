@@ -95,7 +95,7 @@ debug:当此属性设置为true时，将打印出logback内部日志信息，实
     <!-- 测试环境+开发环境. 多个使用逗号隔开. -->
     <!--根据 application.yml增加环境选择的配置active: dev
     active 的环境，自动采用上面配置的springProfile的 logger 日志-->
-    <springProfile name="test,dev">
+    <springProfile name="test,dev,self">
         <logger name="com.arc" level="DEBUG" additivity="false">
             <appender-ref ref="consoleLog"/>
             <!--<appender-ref ref="fileLog"/>-->
@@ -103,7 +103,7 @@ debug:当此属性设置为true时，将打印出logback内部日志信息，实
     </springProfile>
 
     <springProfile name="prod">
-        <logger name="com.arc" level="INFO" additivity="false">
+        <logger name="com.arc" level="DEBUG" additivity="false">
             <appender-ref ref="consoleLog"/>
         </logger>
     </springProfile>
