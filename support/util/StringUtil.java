@@ -1,9 +1,7 @@
 package com.arc.security.browser.util;
 /**
  * Function:字符串工具类
- * @author crossoverJie
- * Date: 2017/6/7 下午11:45
- * @since JDK 1.8
+ * @author yechao
  */
 public class StringUtil {
 

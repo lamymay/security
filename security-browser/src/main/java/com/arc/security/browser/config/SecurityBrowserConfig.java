@@ -1,33 +1,15 @@
 package com.arc.security.browser.config;
 
-import com.arc.security.core.config.security.AbstractChannelSecurityConfig;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-
-//import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-//import org.springframework.security.core.userdetails.UserDetailsService;
-//import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
-//import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
-//import org.springframework.security.web.session.InvalidSessionStrategy;
-//import org.springframework.security.web.session.SessionInformationExpiredStrategy;
-
 /**
- * @Author: HanLong
- * @Date: Create in 2018/3/17 22:10
- * @Description:
+ * @author may
+ * @since 2020/1/5 22:27
  */
-@Configuration
-public class BrowerSecurityConfig extends AbstractChannelSecurityConfig {
+public class SecurityBrowserConfig {
+}
+
 
 //    @Autowired
 //    private SecurityProperties securityProperties;
-
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable();          // 关闭csrf防护
-
-    }
-
 
 
 //    @Override
@@ -57,12 +39,12 @@ public class BrowerSecurityConfig extends AbstractChannelSecurityConfig {
 //
 //    }
 //
-    //
+//
 //    @Autowired
 //    private DataSource dataSource;
 
 
-    //
+//
 //    @Autowired
 //    private UserDetailsService myUserDetailsService;
 //
@@ -80,6 +62,3 @@ public class BrowerSecurityConfig extends AbstractChannelSecurityConfig {
 //
 //    @Autowired
 //    private AuthorizeConfigManager authorizeConfigManager;
-
-
-}
