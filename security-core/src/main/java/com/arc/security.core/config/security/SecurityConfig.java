@@ -1,6 +1,6 @@
 package com.arc.security.core.config.security;
 
-import com.arc.security.core.config.properties.ArcSecurityProperties;
+import com.arc.security.core.config.properties.arc.ArcSecurityProperties;
 import com.arc.security.core.config.security.filter.ImageValidateCodeFilter;
 import com.arc.security.core.config.security.filter.SmsValidateCodeFilter;
 import com.arc.security.core.config.security.handler.MyAuthenticationFailureHandler;

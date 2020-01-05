@@ -1,0 +1,85 @@
+spring:
+  application:
+    name: security7
+  profiles:
+    active: dev
+#  thymeleaf:
+#    cache: false
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    mode: HTML5
+#    encoding: UTF-8
+
+---
+########################################################
+#          不同环境         Environment for Localhost  注意：数据配置在这里
+########################################################
+server:
+  port: 80
+
+spring:
+  profiles: dev
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+
+arc:
+  security:
+    browser:
+      #login的地址是斜线大头的，否则报错K
+      loginUrl: /authentication/require
+      loginProcessingUrl: /v2/login/form/process
+      cookieKey: DEV_ARC_KEY_
+
+    code:
+      length: 3
+      image:
+        width: 100
+        height: 80
+        expiredSecond: 60
+        url: /a,/b,/c
+      sms:
+        test: aaa
+---
+server:
+  port: 80
+
+spring:
+  profiles: local
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password:
+#    jedis:
+#      pool:
+#        # 最大空闲连接
+#        max-idle: 8
+#        # 最小空闲链接
+#        min-idle: 0
+#        # 最大连接数（负数表示没有限制）
+#        max-active: 8
+#        # 最大阻塞等待时间（负数表示没有限制）
+#        max-wait: 0
+#    # 链接超时时间（毫秒）
+#    timeout: 50
+
+arc:
+  security:
+    browser:
+      #login的地址是斜线打头的，否则报错
+      loginUrl: /authentication/require
+      loginProcessingUrl: /v2/login/form/process
+      cookieKey: ARC
+
+    code:
+      length: 4
+      image:
+        width: 100
+        height: 80
+        expiredSecond: 60
+        url: /abc
+      sms:
+        test: aaa

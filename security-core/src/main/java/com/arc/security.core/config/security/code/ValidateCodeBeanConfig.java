@@ -1,6 +1,6 @@
 package com.arc.security.core.config.security.code;
 
-import com.arc.security.core.config.properties.ArcSecurityProperties;
+import com.arc.security.core.config.properties.arc.ArcSecurityProperties;
 import com.arc.security.core.service.security.ValidateCodeGenerator;
 import com.arc.security.core.service.security.impl.ImageValidateCodeGenerator;
 import com.arc.security.core.service.security.impl.SmsValidateCodeGenerator;

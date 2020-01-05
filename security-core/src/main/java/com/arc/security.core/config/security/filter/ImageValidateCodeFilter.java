@@ -1,6 +1,6 @@
 package com.arc.security.core.config.security.filter;
 
-import com.arc.security.core.config.properties.ArcSecurityProperties;
+import com.arc.security.core.config.properties.arc.ArcSecurityProperties;
 import com.arc.security.core.exception.VerifyCodeException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;

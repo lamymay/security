@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.arc</groupId>
-    <artifactId>security11</artifactId>
+    <artifactId>security-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>security 多模块构建可复用的安全框架</name>
     <description>security 多模块构建可复用的安全框架</description>

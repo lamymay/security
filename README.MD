@@ -1,3 +1,19 @@
+#优先级是最高的的
+#spring boot 启动会扫描以下位置的application.properties或者
+##application.yml文件作为Spring boot的默认配置文件
+##– file:./config/
+##– file:./
+##– classpath:/config/
+##– classpath:/
+##– 以上是按照优先级从高到低的顺序，所有位置的文件都会被加载，高优先
+##级配置内容会覆盖低优先级配置内容。
+##– 我们也可以通过配置spring.config.location来改变默认配置
+
+
+
+
+[package-info.java](https://www.cnblogs.com/icecreamdeqinw/p/4667103.html)
+
 #1. Security
 ##### 设计原则：以增量的方式适应变化--加了新的代码即可修改逻
 
@@ -143,3 +159,16 @@ public boolean equals(Object anObject) {
 当然，威权体制下的强政府在很大程度上是以人治原则为其施政基础的。而人治的有效性，在很大程度上有赖于政治精英的个人因素，对于一个民族的长治久安来说，这肯定是不稳定的，如何从人治向法制转变，也将是今后中国面临的大课题。随着社会多元化程度的提升，进一步适应这种社会多元性的制度变革也将水到渠成地到来。这是时代的大趋势。
 
 ```
+
+
+
+# Spring-Security
+Spring Boot  + Spring Security
+
+1. [SpringBoot + Spring Security 基本使用及个性化登录配置](http://blog.csdn.net/u013435893/article/details/79596628)   
+2. [SpringBoot + SpringSecurity 实现图形验证码功能](http://blog.csdn.net/u013435893/article/details/79617872)  
+3. [SpringBoot + SpringSecurity “记住我”功能实现及相关源码分析](https://blog.csdn.net/u013435893/article/details/79675548)  
+4. [SpringBoot + SpringSecurity 短信验证码登录功能](https://blog.csdn.net/u013435893/article/details/79684027)      
+5. [SpringBoot + SpringSecurity OAuth2.0 简单使用](https://blog.csdn.net/u013435893/article/details/79735097)    
+6. [SpringBoot + SpringSecurity 控制授权](https://blog.csdn.net/u013435893/article/details/79770052) 
+

@@ -1,5 +1,6 @@
 package com.arc.security.core.config.properties;
 
+import com.arc.security.core.config.properties.arc.ArcSecurityProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
